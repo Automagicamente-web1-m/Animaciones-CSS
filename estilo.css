@@ -1,0 +1,64 @@
+body{
+    background-color: gainsboro;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+#texto-1{
+    color:red;
+    background-color: rgb(164, 227, 229);
+    border: 2px solid black;
+    padding: 5px;
+    animation: escalado 2s infinite;
+}
+
+@keyframes escalado {
+    /* 0%{
+        transform: scale(1);
+    } */
+    50%{
+        transform: scale(0.5);
+    }
+    /* 100%{
+        transform: scale(1);
+    } */
+}
+
+#texto-2{
+    color: blue;
+    background-color: rgb(255, 160, 160);
+    border: 4px dotted black;
+    padding: 7px;
+    animation-name: movimiento;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes movimiento {
+    0%{
+        transform: translateX(2000px);
+    }
+}
+
+#texto-3{
+    color:yellow;
+    background-color: rgb(69, 69, 69);
+    border: 10px outset black;
+    padding: 3px;
+    animation: animacion 2s infinite;
+}
+
+@keyframes animacion {
+    25%{
+        background-color: rgb(55, 212, 112);
+        border-color: cyan;
+    }
+    50%{
+        background-color: red;
+        border-color: yellow;
+    }
+    75%{
+        background-color: brown;
+        border-color: chocolate;
+    }
+}
